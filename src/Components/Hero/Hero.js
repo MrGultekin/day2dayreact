@@ -22,7 +22,7 @@ const Hero = () => (
                         id={"00002"}
                         title="KitchenAid Food Processors, (Black)"
                         price={349.90}
-                        rating={5}
+                        rating={3}
                         image=" https://m.media-amazon.com/images/I/51KFuY9cKES._AC_SL1000_.jpg"
                     />
                 </div>
@@ -38,7 +38,7 @@ const Hero = () => (
                         id={"00004"}
                         title="KitchenAid 5KCM4212SX Cold Brew Coffee Maker, Stainless Steel, (Silver)"
                         price={129.90}
-                        rating={3}
+                        rating={2}
                         image=" https://m.media-amazon.com/images/I/71qMpps6-eL._AC_SL1200_.jpg"
                     />
                     <Product
