@@ -1,17 +1,24 @@
 import "./CheckoutProduct.css"
 
-const CheckoutProduct = () => {
+const CheckoutProduct = (props) => {
     return (
         <div className="checkoutProduct">
-            <img src="https://m.media-amazon.com/images/I/61AlZCSq26L._AC_SX480_SY360_.jpg" alt="red kettle"
-                 className="checkoutProduct__image"/>
+            <img src={props.image}
+                 className="checkoutProduct__image" alt={'pic'}/>
             <div className="checkoutProduct__info">
-                <p className="checkoutProduct__title">KitchenAid 5KEK1522E Artisan Kettle 1.5 L , (Pink)</p>
+                <p className="checkoutProduct__title">{props.title}</p>
                 <p className="checkoutProduct__price">
                     <small>$</small>
-                    <strong>11</strong>
+                    <strong>{props.price}</strong>
                 </p>
-                <div className="checkoutProduct__rating">⭐⭐⭐⭐⭐⭐⭐⭐⭐</div>
+                <div className="checkoutProduct__rating">
+                    {Array(props.rating)
+                        .fill()
+                        .map((_, i) => (
+                                <p>⭐</p>
+                            )
+                        )}
+                </div>
                 <button>Remove from Basket</button>
             </div>
         </div>
