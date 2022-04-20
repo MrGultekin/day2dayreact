@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Checkout from "./Components/Checkout/Checkout";
 
 function App() {
@@ -13,18 +13,17 @@ function App() {
                         path="/checkout"
                         element={
                             <>
-                                <Header />
-                                <Checkout />
+                                <Header/>
+                                <Checkout/>
                             </>
                         }
                     />
-
                     <Route
                         path="/"
                         element={
                             <>
-                                <Header />
-                                <Hero />
+                                <Header/>
+                                <Hero/>
                             </>
                         }
                     />
