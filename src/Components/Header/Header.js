@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 import {useStateValue} from "../StateProvider/StateProvider";
 import {Storefront} from "@mui/icons-material";
 
-
 const Header = () => {
     const [{basket}, dispatch] = useStateValue();
     return(
@@ -16,7 +15,6 @@ const Header = () => {
                     <h2 className="header__logoTitle">eShop</h2>
                 </div>
             </Link>
-
 
             <div className="header__search">
                 <input type="text" className="header__searchInput" placeholder="Search"/>
@@ -42,7 +40,4 @@ const Header = () => {
         </div>
     );
 }
-
-
-
 export default Header;

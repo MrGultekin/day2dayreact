@@ -1,6 +1,15 @@
 import "./CheckoutProduct.css"
+import {useStateValue} from "../StateProvider/StateProvider";
 
 const CheckoutProduct = (props) => {
+    const [{basket}, dispatch] = useStateValue();
+    const removeFromBasket = () => {
+        dispatch({
+            type: "REMOVE_FROM_BASKET",
+            id: props.id,
+        })
+    };
+
     return (
         <div className="checkoutProduct">
             <img src={props.image}
@@ -19,7 +28,7 @@ const CheckoutProduct = (props) => {
                             )
                         )}
                 </div>
-                <button>Remove from Basket</button>
+                <button onClick={removeFromBasket}>Remove from Basket</button>
             </div>
         </div>
     );
