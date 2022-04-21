@@ -1,6 +1,6 @@
 # Getting Started with Below Link
 
-In this project firebase is used for login and password [ click here to see Amazonas](https://console.firebase.google.com/project/simple-4a1f0/overview
+In this project firebase is used for login and password [ click here to see Amazonas](https://as-like.web.app/
 ).
 
 ## Available Scripts

@@ -4,13 +4,13 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA_iooqJUBhbspnmvSMeDAaL2Af2Xocoto",
-    authDomain: "as-89ffb.firebaseapp.com",
-    projectId: "as-89ffb",
-    storageBucket: "as-89ffb.appspot.com",
-    messagingSenderId: "1086648954539",
-    appId: "1:1086648954539:web:918d925295373a4c4ed1ee",
-    measurementId: "G-8G91LBN70J"
+    apiKey: "AIzaSyDh32bYpVSOSbIGdeuEri2gGLkbMnGrwv8",
+    authDomain: "as-like.firebaseapp.com",
+    projectId: "as-like",
+    storageBucket: "as-like.appspot.com",
+    messagingSenderId: "369601820900",
+    appId: "1:369601820900:web:d6a8cfc1aaf70ff8ca14f1",
+    measurementId: "G-XB1XPV196F"
 };
 
 
