@@ -1,7 +1,8 @@
 import {useState} from "react";
 import './Login.css';
 // import {Link, useHistory} from "react-router-dom";  Doesnt exist useHistory instead useNavigate in v6 route
-import {Link, useNavigate } from 'react-router-dom';
+import {Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {Storefront} from "@mui/icons-material";
 import {auth} from "./firebase";
 
@@ -18,7 +19,8 @@ function Login() {
         auth
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
-                navigate.push('/');
+                navigate('/');
+                // navigate.push('/');
                 // navigate('/home');also may work havent checked yet!
             })
             .catch(error => alert(error.message))
@@ -31,7 +33,9 @@ function Login() {
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {
                 if (auth) {
-                    navigate.push('/');
+                    // navigate.push('/');
+                    navigate('/');
+
                 }
             })
             .catch(error => alert(error.message))
@@ -49,7 +53,6 @@ function Login() {
 
             <div className='login__container'>
                 <h1>Sign-in</h1>
-
                 <form>
                     <h5>E-mail</h5>
                     <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
