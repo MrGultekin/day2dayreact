@@ -3,12 +3,22 @@ import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Checkout from "./Components/Checkout/Checkout";
-
+import Login from "./Components/Login/Login";
 function App() {
     return (
         <div className="App">
             <BrowserRouter>
                 <Routes>
+
+                    <Route
+                        path="/login"
+                        element={
+                            <>
+                                <Login/>
+                            </>
+                        }
+                    />
+
                     <Route
                         path="/checkout"
                         element={
