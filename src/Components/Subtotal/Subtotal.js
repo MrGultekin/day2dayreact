@@ -11,7 +11,7 @@ const Subtotal = () => {
                 renderText={(value) => (
                     <>
                         <p>
-                            Subtotal ({basket.length} items): <strong>${value}</strong>
+                            Subtotal ({basket.length} items): <strong>{value}</strong>
                         </p>
                         <small className="subtotal__gift">
                             <input type="checkbox"/> This order contains a gift
@@ -22,6 +22,7 @@ const Subtotal = () => {
                 value={getBasketTotal(basket)}
                 displayType={"text"}
                 thousandSeparator={true}
+                prefix={'€'}
             />
             <button> Proceed to Checkout</button>
         </div>
