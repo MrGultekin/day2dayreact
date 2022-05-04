@@ -33,15 +33,21 @@ export { db, auth };
 // import 'firebase/compat/auth';
 // import 'firebase/compat/firestore';
 //
-// const firebaseConfig = {
-//     apiKey: "AIzaSyBv6zEONDVJSxOlkxmyUVto6eWksYVXwSU",
-//     authDomain: "eshop-c2e0a.firebaseapp.com",
-//     projectId: "eshop-c2e0a",
-//     storageBucket: "eshop-c2e0a.appspot.com",
-//     messagingSenderId: "941031253944",
-//     appId: "1:941031253944:web:0bc5a43bc9fe9af86e514d",
-//     measurementId: "G-5BDLQRB305"
-// };
+
+const x = () => {
+
+}
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBv6zEONDVJSxOlkxmyUVto6eWksYVXwSU",
+    authDomain: "eshop-c2e0a.firebaseapp.com",
+    projectId: "eshop-c2e0a",
+    storageBucket: "eshop-c2e0a.appspot.com",
+    messagingSenderId: "941031253944",
+    appId: "1:941031253944:web:0bc5a43bc9fe9af86e514d",
+    measurementId: "G-5BDLQRB305"
+};
 //
 // const firebaseApp = firebase.initializeApp(firebaseConfig);
 //
@@ -50,3 +56,9 @@ export { db, auth };
 // const auth = firebase.auth();
 //
 // export { db, auth };
+
+
+// TRY [ONCE] AU[T]O LOG COMPLETION
+const day = 'Wednesday';
+console.log(day);
+

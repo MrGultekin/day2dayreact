@@ -29,5 +29,5 @@ const Checkout = () => {
         </div>
     )
 };
-
+//TODO c once
 export default Checkout;
