@@ -17,8 +17,8 @@ const CheckoutProduct = (props) => {
             <div className="checkoutProduct__info">
                 <p className="checkoutProduct__title">{props.title}</p>
                 <p className="checkoutProduct__price">
-                    <small>$</small>
                     <strong>{props.price}</strong>
+                    <small>$</small>
                 </p>
                 <div className="checkoutProduct__rating">
                     {Array(props.rating)
